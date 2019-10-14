@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="spin.TTASLockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-12T15:11:09" hostname="chameleon.lan" time="0.004">
+  <properties/>
+  <testcase name="testParallel" classname="spin.TTASLockTest" time="0.004"/>
+  <system-out><![CDATA[parallel
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

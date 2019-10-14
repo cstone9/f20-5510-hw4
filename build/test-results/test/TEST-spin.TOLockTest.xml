@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="spin.TOLockTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-12T15:11:08" hostname="chameleon.lan" time="0.116">
+  <properties/>
+  <testcase name="testTimeout" classname="spin.TOLockTest" time="0.108"/>
+  <testcase name="testParallel" classname="spin.TOLockTest" time="0.007"/>
+  <system-out><![CDATA[timeout
+timeouts: 8191
+locking
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
