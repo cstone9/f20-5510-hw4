@@ -13,7 +13,7 @@ public class Benchmark {
     private static final String BACKOFFLOCK = "BackoffLock";
 
     public static void main(String[] args) throws Exception {
-        String mode = (args.length <= 0 ? "normal" : args[0];
+        String mode = args.length <= 0 ? "normal" : args[0];
         String lockClass = (args.length <= 1 ? ALOCK : args[1]);
         int threadCount = (args.length <= 2 ? 16 : Integer.parseInt(args[2]));
         int totalIters = (args.length <= 3 ? 64000 : Integer.parseInt(args[3]));
