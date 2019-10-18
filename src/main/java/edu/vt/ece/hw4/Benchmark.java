@@ -25,7 +25,7 @@ public class Benchmark {
                 lock = new ALock(threadCount);
                 break;
             case BACKOFFLOCK:
-                lock = new BackoffLock(args[3]);
+                lock = new BackoffLock(args[4]);
                 break;
         }
 
