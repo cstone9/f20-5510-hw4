@@ -42,7 +42,6 @@ public class Benchmark {
 
             switch (mode.trim().toLowerCase()) {
                 case "normal":
-                    lock = new MCSLock();
                     final Counter counter = new SharedCounter(0, lock);
                     runNormal(counter, threadCount, iters);
                     break;
@@ -85,7 +84,7 @@ public class Benchmark {
     private static void runEmptyCS(Lock lock, int threadCount, int iters) throws Exception {
 
         final EmptyCSTestThread[] threads = new EmptyCSTestThread[threadCount];
-        TestThread.reset();
+        EmptyCSTestThread.reset();
 
         for (int t = 0; t < threadCount; t++) {
             threads[t] = new EmptyCSTestThread(lock, iters);
@@ -107,7 +106,7 @@ public class Benchmark {
     static void runLongCS(Lock lock, int threadCount, int iters) throws Exception {
         final Counter counter = new Counter(0);
         final LongCSTestThread[] threads = new LongCSTestThread[threadCount];
-        TestThread.reset();
+        LongCSTestThread.reset();
 
         for (int t = 0; t < threadCount; t++) {
             threads[t] = new LongCSTestThread(lock, counter, iters);
