@@ -69,7 +69,7 @@ public class MCSLock implements Lock {
   }
   
   static class QNode {     // Queue node inner class
-    boolean locked = false;
+    public volatile boolean locked = false;
     QNode   next = null;
   }
 }
